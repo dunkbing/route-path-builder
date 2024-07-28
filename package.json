@@ -1,6 +1,6 @@
 {
   "name": "route-path-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple typescript library for building route paths",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
