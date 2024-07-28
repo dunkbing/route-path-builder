@@ -1,7 +1,13 @@
-import { PathParams, QueryParams } from './types';
+import type { PathParams, QueryParams } from "./types.ts";
 
-export function interpolatePathParams<T extends string>(path: T, params: PathParams<T>): string {
-  return path.replace(/:(\w+)/g, (_, key) => String(params[key as keyof PathParams<T>] || ''));
+export function interpolatePathParams<T extends string>(
+  path: T,
+  params: PathParams<T>,
+): string {
+  return path.replace(
+    /:(\w+)/g,
+    (_, key) => String(params[key as keyof PathParams<T>] || ""),
+  );
 }
 
 export function buildQueryString(params: QueryParams): string {
