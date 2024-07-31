@@ -11,6 +11,12 @@ Using npm:
 npm install route-path-builder
 ```
 
+Using jsr:
+
+```bash
+npx jsr add @dunkbing/route-path-builder
+```
+
 Usage Creating a Single Route Path
 
 ```typescript
